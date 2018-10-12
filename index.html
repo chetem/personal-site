@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Phantom by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -9,106 +9,53 @@
 		<title>Chris Hetem</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/lightbox.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body>
+	<body class="is-loading">
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Chris Hetem</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="consulting.html">App & Web Consulting</a></li>
-							<li><a href="index.html">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li><a href="projects.html">After Hours</a></li>
-
-						</ul>
-					</nav>
-
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<p><a class="image right" href="images/bio.jpg" data-lightbox="Chris Hetem"><img src="images/bio.jpg" alt="" /></a>With a curious mind and a wild imagination, Chris is led down all sorts of paths providing him with a variety of skillsets. An iOS developer by trade and an adventurer by heart, he's currently spending his days in sunny Mount Maunganui after a surf trip to New Zealand that just never seemed to come to an end.</p>
-								
-								<p>If you're looking for someone to collaborate with <a href="#contact">get in touch!</a></p>
-							</header>
-						</div>
-					</div>
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Chris Hetem</h1>
+							<p>Mt. M, New Zealand</p>
+						</header>
+
+						<hr /> <!-- divider line -->
+
+						<footer>
+							<ul class="icons">
+								<li><a href="mailto:hello@chrishetem.com" target="_blank" class="fa-envelope">Email</a></li>
+								<li><a href="https://www.instagram.com/c.hetem" target="_blank" class="fa-instagram">Instagram</a></li>
+								<li><a href="https://www.facebook.com/chris.hetem" target="_blank" class="fa-facebook">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2 id="contact">Get in touch</h2>
-								<form method="post" action="https://formspree.io/hello@chrishetem.com">
-									<div class="field half first">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="special" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="https://www.instagram.com/c.hetem/" class="icon style2 fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/chetem" class="icon style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:hello@chrishetem.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>Made with stoke 🤙</li>
-							</ul>
-						</div>
+						<ul class="copyright">
+							<li>&copy; Chris Hetem</li></li>
+						</ul>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/lightbox.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
 	</body>
 </html>
